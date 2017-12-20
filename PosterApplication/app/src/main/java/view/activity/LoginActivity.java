@@ -36,12 +36,29 @@ public class LoginActivity extends AbstractActivity {
         btnLoginAction = (Button) findViewById(R.id.btnLoginAction);
 
         initView();
+        initListener();
     }
 
     private void initView() {
         pcLoginAuth.getIndeterminateDrawable().setColorFilter(getResources().getColor(android.R.color.white), PorterDuff.Mode.SRC_IN);
         layoutConnectionInProgress.setVisibility(View.INVISIBLE);
         tvMessageError.setVisibility(View.INVISIBLE);
+    }
+
+    private void initListener() {
+        btnLoginAction.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                btnLoginAction.setVisibility(View.INVISIBLE);
+                layoutConnectionInProgress.setVisibility(View.VISIBLE);
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        finishWithResult(view.activity.ServiceActivity.DISPLAY_ACTIVITY_MAIN);
+                    }
+                }, 2000);
+            }
+        });
     }
 
 }

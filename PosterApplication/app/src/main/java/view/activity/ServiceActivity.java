@@ -12,41 +12,10 @@ public class ServiceActivity extends AbstractActivity {
 
     private static final int REQUEST_CODE_ACTIVITY_SPLASH               =200;
     private static final int REQUEST_CODE_ACTIVITY_LOGIN                =201;
-    private static final int REQUEST_CODE_ACTIVITY_PLAYERS              =202;
-    private static final int REQUEST_CODE_ACTIVITY_SENSORS_MANAGER      =203;
-    private static final int REQUEST_CODE_ACTIVITY_SESSIONS_MANAGER     =204;
-    private static final int REQUEST_CODE_ACTIVITY_HELP                 =205;
-    private static final int REQUEST_CODE_ACTIVITY_CUSTOM_PLAYER        =206;
-    private static final int REQUEST_CODE_ACTIVITY_MY_ACCOUNT           =207;
-    private static final int REQUEST_CODE_ACTIVITY_PLAYER_PROFILE       =208;
-    private static final int REQUEST_CODE_ACTIVITY_RUNNING_SESSION      =209;
-    private static final int REQUEST_CODE_ACTIVITY_DATA_SPEED           =210;
-    private static final int REQUEST_CODE_ACTIVITY_DATA_DISTANCE        =211;
-    private static final int REQUEST_CODE_ACTIVITY_DATA_TIME            =212;
-    private static final int REQUEST_CODE_ACTIVITY_DATA_HEART_BEAT      =213;
-    private static final int REQUEST_CODE_ACTIVITY_DATA_ENERGY          =214;
-
-    private static final int REQUEST_CODE_ACTIVITY_TEST_BLUETOOTH       =240;
-    private static final int REQUEST_CODE_ACTIVITY_LIST_BLUETOOTH       =241;
-
+    private static final int REQUEST_CODE_ACTIVITY_MAIN                 =202;
 
     public static final int DISPLAY_ACTIVITY_LOGIN                      = 1;
-    public static final int DISPLAY_ACTIVITY_PLAYERS                    = 2;
-    public static final int DISPLAY_ACTIVITY_SENSORS_MANAGER            = 3;
-    public static final int DISPLAY_ACTIVITY_SESSIONS_MANAGER           = 4;
-    public static final int DISPLAY_ACTIVITY_HELP                       = 5;
-    public static final int DISPLAY_ACTIVITY_CUSTOM_PLAYER              = 6;
-    public static final int DISPLAY_ACTIVITY_MY_ACCOUNT                 = 7;
-    public static final int DISPLAY_ACTIVITY_PLAYER_PROFILE             = 8;
-    public static final int DISPLAY_ACTIVITY_RUNNING_SESSION            = 9;
-    public static final int DISPLAY_ACTIVITY_DATA_SPEED                 = 10;
-    public static final int DISPLAY_ACTIVITY_DATA_DISTANCE              = 11;
-    public static final int DISPLAY_ACTIVITY_DATA_TIME                  = 12;
-    public static final int DISPLAY_ACTIVITY_DATA_HEART_BEAT            = 13;
-    public static final int DISPLAY_ACTIVITY_DATA_ENERGY                = 14;
-
-    public static final int DISPLAY_ACTIVITY_TEST_BLUETOOTH             = 40;
-    public static final int DISPLAY_ACTIVITY_LIST_BLUETOOTH             = 41;
+    public static final int DISPLAY_ACTIVITY_MAIN                       = 2;
 
     public static final String PARAM_PLAYER_KEY                         = "PARAM_PLAYER_KEY";
     public static final String PARAM_SESSION_NAME                       = "PARAM_SESSION_NAME";
@@ -77,66 +46,9 @@ public class ServiceActivity extends AbstractActivity {
                 manageEndActivity(requestCode, resultCode, data);
                 break;
 
-            case REQUEST_CODE_ACTIVITY_PLAYERS:
+            case REQUEST_CODE_ACTIVITY_MAIN:
                 manageEndActivity(requestCode, resultCode, data);
                 break;
-
-            case REQUEST_CODE_ACTIVITY_SENSORS_MANAGER:
-                manageEndActivity(requestCode, resultCode, data);
-                break;
-
-            case REQUEST_CODE_ACTIVITY_SESSIONS_MANAGER:
-                manageEndActivity(requestCode, resultCode, data);
-                break;
-
-            case REQUEST_CODE_ACTIVITY_HELP:
-                manageEndActivity(requestCode, resultCode, data);
-                break;
-
-            case REQUEST_CODE_ACTIVITY_CUSTOM_PLAYER:
-                manageEndActivity(requestCode, resultCode, data);
-                break;
-
-            case REQUEST_CODE_ACTIVITY_MY_ACCOUNT:
-                manageEndActivity(requestCode, resultCode, data);
-                break;
-
-            case REQUEST_CODE_ACTIVITY_PLAYER_PROFILE:
-                manageEndActivity(requestCode, resultCode, data);
-                break;
-
-            case REQUEST_CODE_ACTIVITY_DATA_SPEED:
-                manageEndActivity(requestCode, resultCode, data);
-                break;
-
-            case REQUEST_CODE_ACTIVITY_DATA_DISTANCE:
-                manageEndActivity(requestCode, resultCode, data);
-                break;
-
-            case REQUEST_CODE_ACTIVITY_DATA_TIME:
-                manageEndActivity(requestCode, resultCode, data);
-                break;
-
-            case REQUEST_CODE_ACTIVITY_DATA_HEART_BEAT:
-                manageEndActivity(requestCode, resultCode, data);
-                break;
-
-            case REQUEST_CODE_ACTIVITY_DATA_ENERGY:
-                manageEndActivity(requestCode, resultCode, data);
-                break;
-
-            case REQUEST_CODE_ACTIVITY_RUNNING_SESSION:
-                manageEndActivity(requestCode, resultCode, data);
-                break;
-
-            case REQUEST_CODE_ACTIVITY_TEST_BLUETOOTH:
-                manageEndActivity(requestCode, resultCode, data);
-                break;
-
-            case REQUEST_CODE_ACTIVITY_LIST_BLUETOOTH:
-                manageEndActivity(requestCode, resultCode, data);
-                break;
-
         }
         super.onActivityResult(requestCode, resultCode, data);
     }
@@ -158,7 +70,10 @@ public class ServiceActivity extends AbstractActivity {
                         requestCode, resultCode, data);
                 break;
 
-
+            case DISPLAY_ACTIVITY_MAIN:
+                startActivityWithParams(MainActivity.class,REQUEST_CODE_ACTIVITY_MAIN,
+                        requestCode, resultCode, data);
+                break;
 
             default:
                 finish();

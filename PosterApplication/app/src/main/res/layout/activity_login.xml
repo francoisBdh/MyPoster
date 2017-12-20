@@ -72,7 +72,7 @@
                     android:ellipsize="end"
                     android:textSize="@dimen/activity_login_username_password_zone_text_size"
                     android:hint="@string/login_hint_username"
-                    android:textColorHint="@color/colorRedDark"
+                    android:textColorHint="@color/colorDarkGrey"
                     android:textColor="@color/colorGrey"
                     android:layout_gravity="start|center"
                     />
@@ -103,7 +103,7 @@
                     android:ellipsize="end"
                     android:textSize="@dimen/activity_login_username_password_zone_text_size"
                     android:hint="@string/login_hint_password"
-                    android:textColorHint="@color/colorRedDark"
+                    android:textColorHint="@color/colorDarkGrey"
                     android:textColor="@color/colorGrey"
                     android:inputType="textPassword"
                     android:layout_gravity="start|center"

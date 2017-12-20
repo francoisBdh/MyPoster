@@ -3,7 +3,7 @@
     <string name="sentence_main_activity">Hello world of the marc !</string>
 
     <!-- SplashActivity -->
-    <string name="splash_credit">\@Poster Application 2017–2018 | by Aristocrateam</string>
+    <string name="splash_credit">\@Poster App. 20118 | by Us</string>
 
     <!-- LoginActivity -->
     <string name="activity_login_subtitle">Login</string>
