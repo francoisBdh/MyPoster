@@ -4,33 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
-    <LinearLayout
-        android:id="@+id/btDisplayBluetoothActivity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true"
-        android:clickable="true"
-        android:background="@drawable/selector_background_item_session"
-        >
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:textColor="@color/colorWhite"
-            android:text="test bluetooth"
-            />
-
-    </LinearLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="@dimen/activity_padding"
         android:gravity="center"
+        android:background="@drawable/degrade_background"
         android:orientation="vertical"
         >
 
@@ -43,19 +22,19 @@
             >
 
             <ImageView
-                android:id="@+id/ivLoginName"
-                android:layout_width="wrap_content"
-                android:layout_height="@dimen/activity_login_ic_title_height"
-                android:src="@drawable/ic_title"
-                android:layout_marginBottom="@dimen/activity_login_ic_title_margin_bottom"
-                />
+            android:id="@+id/ivLoginName"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/activity_login_ic_title_height"
+            android:src="@drawable/logo"
+            android:layout_marginBottom="@dimen/activity_login_ic_title_margin_bottom"
+            />
 
             <TextView
                 android:id="@+id/tvLoginSubtitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/activity_login_subtitle_text_size"
-                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite"
                 android:text="@string/activity_login_subtitle"
                 />
 
@@ -93,7 +72,7 @@
                     android:ellipsize="end"
                     android:textSize="@dimen/activity_login_username_password_zone_text_size"
                     android:hint="@string/login_hint_username"
-                    android:textColorHint="@color/colorGrey"
+                    android:textColorHint="@color/colorRedDark"
                     android:textColor="@color/colorGrey"
                     android:layout_gravity="start|center"
                     />
@@ -124,7 +103,7 @@
                     android:ellipsize="end"
                     android:textSize="@dimen/activity_login_username_password_zone_text_size"
                     android:hint="@string/login_hint_password"
-                    android:textColorHint="@color/colorGrey"
+                    android:textColorHint="@color/colorRedDark"
                     android:textColor="@color/colorGrey"
                     android:inputType="textPassword"
                     android:layout_gravity="start|center"
@@ -154,7 +133,7 @@
                 android:layout_width="@dimen/activity_login_username_password_zone_width"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:background="@drawable/rect_border_white"
+                android:background="@drawable/rect_border_darkred"
                 android:textSize="@dimen/activity_login_submessage_text_size"
                 android:padding="@dimen/activity_login_bt_connect_padding"
                 android:textColor="@color/colorWhite"

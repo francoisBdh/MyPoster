@@ -34,7 +34,6 @@ public class LoginActivity extends AbstractActivity {
         layoutConnectionInProgress = findViewById(R.id.layoutConnectionInProgress);
         pcLoginAuth = (ProgressBar) findViewById(R.id.pcLoginAuth);
         btnLoginAction = (Button) findViewById(R.id.btnLoginAction);
-        btDisplayBluetoothActivity = findViewById(R.id.btDisplayBluetoothActivity);
 
         initView();
     }

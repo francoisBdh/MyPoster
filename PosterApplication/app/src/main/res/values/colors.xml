@@ -1,15 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+
+    <!-- Charte graphique ESEO -->
+
+    <color name="colorRedLight">#F76889</color>
+    <color name="colorRed">#ED1C24</color>
+    <color name="colorRedDark">#BF0000</color>
+
+    <color name="colorBlueLight">#7087AD</color>
+    <color name="colorBlue">#19468E</color>
+    <color name="colorBlueDark">#193366</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorWhiteGray">#DDDDDD</color>
+    <color name="colorGreyLight">#BFBFBF</color>
+    <color name="colorDarkGrey">#3F3F3F</color>
+
+    <!-- Autre couleur -->
+
     <color name="colorPrimary">#1F4E79</color>
     <color name="colorPrimaryDark">#233648</color>
     <color name="colorAccent">#CC3232</color>
-    <color name="colorWhite">#FFFFFF</color>
     <color name="colorGrey">#5b5b5b</color>
     <color name="colorSoftGrey">#a9a2a2</color>
     <color name="colorError">#CC3232</color>
     <color name="colorItemDivider">#384D62</color>
-    <color name="colorBlue">#5B9BD5</color>
-    <color name="colorRed">#CC3232</color>
     <color name="colorRedPressed">#990000</color>
     <color name="colorGreen">#0bef00</color>
     <color name="colorOrange">#ffaa00</color>

@@ -9,6 +9,35 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+
+        <!-- App Service -->
+        <service android:name="service.AppService"
+                 android:stopWithTask="true"/>
+
+        <!-- ServiceActivity "-->
+        <activity
+            android:name="view.activity.ServiceActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- SplashActivity -->
+        <activity
+            android:name="view.activity.SplashActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            />
+
+        <!-- LoginActivity -->
+        <activity
+            android:name="view.activity.LoginActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            />
+
+
         <activity android:name="view.activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

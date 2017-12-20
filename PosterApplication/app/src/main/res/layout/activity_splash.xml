@@ -19,11 +19,11 @@
         />
 
     <ImageView
-        android:id="@+id/ic_title_splash_screen"
+        android:id="@+id/logo"
         android:layout_centerInParent="true"
         android:layout_height="wrap_content"
         android:layout_width="@dimen/activity_splash_ic_title_width"
-        android:src="@drawable/ic_title"
+        android:src="@drawable/logo"
         />
 
 </RelativeLayout>
