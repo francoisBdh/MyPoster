@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">PosterApplication</string>
+    <string name="sentence_main_activity">Hello world of the marc !</string>
+
+    <!-- SplashActivity -->
+    <string name="splash_credit">\@2017–2018 | by THE MARC !</string>
+
+    <!-- LoginActivity -->
+    <string name="activity_login_subtitle">Login</string>
+    <string name="login_hint_username">Enter your username</string>
+    <string name="login_hint_password">Enter your password</string>
+    <string name="login_message_error">Message erreur</string>
+    <string name="login_message_in_progress">Connexion…</string>
+    <string name="login_button">Connect</string>
 </resources>

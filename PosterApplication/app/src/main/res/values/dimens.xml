@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_padding">5dp</dimen>
+
+    <!-- Splash dimens -->
+    <dimen name="activity_splash_ic_title_width">300dp</dimen>
+    <dimen name="activity_splash_credit_text_size">15sp</dimen>
+
+    <!-- Login dimens -->
+    <dimen name="activity_login_ic_title_height">40dp</dimen>
+    <dimen name="activity_login_ic_title_margin_bottom">9dp</dimen>
+    <dimen name="activity_login_subtitle_text_size">20sp</dimen>
+    <dimen name="activity_login_submessage_text_size">15sp</dimen>
+    <dimen name="activity_login_username_password_zone_text_size">15sp</dimen>
+    <dimen name="activity_login_username_password_zone_width">250dp</dimen>
+    <dimen name="activity_login_username_password_ic_size">25dp</dimen>
+    <dimen name="activity_login_username_password_ic_padding">5dp</dimen>
+    <dimen name="activity_login_username_password_zone_text_margin_top_bottom">2dp</dimen>
+    <dimen name="activity_login_progress_bar_margin">6dp</dimen>
+    <dimen name="activity_login_progress_bar_size">30dp</dimen>
+    <dimen name="activity_login_bt_connect_padding">10dp</dimen>
+
+    <!-- Shape dimens -->
+    <dimen name="rect_border_white_stroke_dimens">2dp</dimen>
+
+</resources>
